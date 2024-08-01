@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-image: url(imgs/capa.jpg);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 600px;
+    width: 600px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card > .question p {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-yes, .btn-no {
+    height: 48px;
+    width: 100px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-yes {
+    background-color: #bffcbf;
+}
+
+.btn-no {
+    background-color: #fc7e7e;
+    color: #fff;
+}
+
+.answer {
+    display: none;
+    justify-content: center;
+    position:relative;
+}
+
+.answer > p , a{
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #e42c4b;
+    text-shadow: 1px 1px #000;
+    text-decoration: none;
+}
+
+a:hover{
+    text-shadow: 1px 1px #fc7e7e;
+    color: #000000;
+}
